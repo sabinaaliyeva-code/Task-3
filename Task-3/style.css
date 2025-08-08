@@ -1,0 +1,181 @@
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+}
+
+.header{
+    height:200px;
+    background-color: darkslategrey;
+}
+
+.nav {
+    display: flex;            
+    gap: 20px;                
+    justify-content: flex-end;
+    
+    padding: 20px;  
+}
+
+.nav a{
+    box-sizing:border-box;
+    color: brown;
+    width: 10px;
+    float:right;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 35px 45px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+.nav:hover{
+    background-color:lightslategray;
+    transition-duration: 0.4s;
+    color: brown;
+    padding: 16px 32px;
+}
+
+#logo{
+    font-weight: 300;
+    font-size: 60px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:olive;
+}
+
+p{
+    font-size: 20px;
+    font-style: normal;
+    color: midnightblue;
+}
+
+h3{
+    font-size: 30px;
+    color: olive;
+}
+
+.card{
+    height:600px;
+    border-top: 3px solid black;
+    text-align: center;
+}
+
+.checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 80px;
+    grid-gap:10px;
+    margin-left: 50px;
+}    
+
+.col{
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    background-color:darkolivegreen;
+    height: 300px;
+    width:400px;
+}
+
+.button{
+    background-color:cornflowerblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;   
+}
+
+.button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#Home{
+    background-image: url(images/pngtree-the-entrance-of-an-asian-restaurant-picture-image_2601800.jpg);
+}
+
+#Menu{
+    background-color: lightslategray;
+}
+
+#Contact{
+    background-color:whitesmoke;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box{
+    background-color:white;
+    box-sizing: border-box;
+    width:300px;
+}
+
+.footer{
+    background-color:grey;
+    height: 30px;
+}
+
+.bi{
+    color: lightskyblue;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}    
+
+@media (max-width: 768px) {
+    .checkbox {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .col {
+        height: 100px;         
+        padding: 10px;         
+        font-size: 16px;       
+    }
+    .item{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content:space-between;
+        gap: 5px;
+        width: 100px;
+    }
+    .box{
+        height: 350px;
+    }    
+    .button{
+        font-size: 5px;
+    }
+    .card-container{
+        display:grid;
+    }
+    #logo{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .nav a{
+        width: 10px;
+        padding-left: 30px;
+    }
+    .bi{
+        width: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}  
